@@ -199,7 +199,7 @@ CreateThread(function()
 end)
 
 RegisterCommand("firemode", function()
-    if currWeapon ~= nil then
+    if currWeapon ~= nil and #currWeapon.modes > 1 then
         if not currWeapon.safety then
             if currWeapon.index == nil then currWeapon.index = 1 else currWeapon.index += 1 end
             if currWeapon.index > #currWeapon.modes then currWeapon.index = 1 end
