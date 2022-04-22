@@ -209,7 +209,7 @@ RegisterCommand("firemode", function()
         end
     end
 end)
-RegisterKeyMapping("firemode", "[Fire Modes] Change weapon fire mode.", "KEYBOARD", "")
+RegisterKeyMapping("firemode", "[Fire Modes] Change weapon fire mode.", "KEYBOARD", "K")
 
 RegisterCommand("weaponsafety", function()
     if currWeapon ~= nil then
@@ -217,4 +217,4 @@ RegisterCommand("weaponsafety", function()
         PlaySoundFrontend(-1, "TOGGLE_ON", "HUD_FRONTEND_DEFAULT_SOUNDSET", 1) -- Sounds are fun!
     end
 end)
-RegisterKeyMapping("weaponsafety", "[Fire Modes] Toggle weapon safety.", "KEYBOARD", "")
+RegisterKeyMapping("weaponsafety", "[Fire Modes] Toggle weapon safety.", "KEYBOARD", "L")
